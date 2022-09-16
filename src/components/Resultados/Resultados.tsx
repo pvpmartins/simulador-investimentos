@@ -4,7 +4,6 @@ import { IValores } from "../../App"
 
 
 const Resultados = ({resultados}:IValores)=> {
-    console.log(resultados)
     return (
         <div className="resultados">
             <h1 className="resultados-title">Resultado da simulação</h1>
