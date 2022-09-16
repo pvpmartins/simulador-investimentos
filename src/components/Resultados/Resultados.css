@@ -1,0 +1,55 @@
+.resultados {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultados-title{
+    font-size: 1.2em;
+}
+
+.cards {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: [column-1-start] 1fr [column-1-end column-2-start] 1fr [column-2-end column-3-start] 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "final-bruto aliq-ir valor-ir"
+                        "final-liq total-inv ganho-liq"
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 3px black;
+    padding: .2em 1em;
+    width: 9em;
+}
+
+.card > h3{
+    margin: 0;
+    font-size: .9em;
+}
+
+.final-bruto{
+    grid-area: final-bruto;
+}
+
+.aliq-ir{
+    grid-area: aliq-ir;
+}
+
+.valor-ir{
+    grid-area: valor-ir;
+}
+
+.final-liq{
+    grid-area: final-liq;
+}
+
+.total-inv{
+    grid-area: total-inv;
+}
+
+.ganho-liq {
+    grid-area: ganho-liq;
+}
